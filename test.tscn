@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://6pf15fsdh6yd"]
+
+[ext_resource type="Script" uid="uid://e47j6ayjl26k" path="res://test.gd" id="1_37kl0"]
+[ext_resource type="Script" uid="uid://lupcareug51p" path="res://scripts/form.gd" id="2_8uh7m"]
+
+[sub_resource type="Resource" id="Resource_8uh7m"]
+script = ExtResource("2_8uh7m")
+id = 0
+trainName = "Test Train"
+companyName = "Test Company"
+metadata/_custom_type_script = "uid://lupcareug51p"
+
+[node name="Test" type="Control" unique_id=800883281]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_37kl0")
+ticket = SubResource("Resource_8uh7m")
+
+[node name="Panel" type="Panel" parent="." unique_id=1967582115]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 63.0
+offset_right = 526.0
+offset_bottom = 725.0
+
+[node name="Button" type="Button" parent="Panel" unique_id=175715395]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 48.0
+offset_right = 296.0
+offset_bottom = 94.0
+text = "SAVE DATA (MEM)"
+
+[node name="Button4" type="Button" parent="Panel" unique_id=1231882118]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 280.0
+offset_right = 296.0
+offset_bottom = 326.0
+text = "SAVE DATA (DISK)"
+
+[node name="Button5" type="Button" parent="Panel" unique_id=1522084111]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 336.0
+offset_right = 296.0
+offset_bottom = 382.0
+text = "EXPORT PDF"
+
+[node name="Button2" type="Button" parent="Panel" unique_id=1103577226]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 126.0
+offset_right = 296.0
+offset_bottom = 172.0
+text = "LOAD DATA (MEM)"
+
+[node name="Button3" type="Button" parent="Panel" unique_id=1857278539]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 214.0
+offset_right = 296.0
+offset_bottom = 260.0
+text = "CLEAR TIK OBJ"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1397622452]
+layout_mode = 0
+offset_left = 615.0
+offset_top = 63.0
+offset_right = 1804.0
+offset_bottom = 1051.0
+
+[connection signal="button_up" from="Panel/Button" to="." method="_on_button_button_up"]
+[connection signal="button_up" from="Panel/Button4" to="." method="_on_button_4_button_up"]
+[connection signal="button_up" from="Panel/Button5" to="." method="_on_button_5_button_up"]
+[connection signal="button_up" from="Panel/Button2" to="." method="_on_button_2_button_up"]
+[connection signal="button_up" from="Panel/Button3" to="." method="_on_button_3_button_up"]

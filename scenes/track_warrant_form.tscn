@@ -1,0 +1,717 @@
+[gd_scene format=3 uid="uid://ba6lmrtpyisoy"]
+
+[ext_resource type="Script" uid="uid://viimkmtsriy3" path="res://scripts/track_warrant_form.gd" id="1_elgqj"]
+[ext_resource type="FontFile" uid="uid://clxwujdqoa4gp" path="res://assets/fonts/SourceSansPro/SourceSansPro-Regular.ttf" id="1_qrkk7"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_elgqj"]
+font = ExtResource("1_qrkk7")
+font_size = 32
+
+[node name="TrackWarrantForm" type="Control" unique_id=1695434860]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_elgqj")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=2101292979]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.022622835
+anchor_top = 0.012345679
+anchor_right = 0.97773063
+anchor_bottom = 0.99485594
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=1934102168]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="TicketNumber" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=118340585]
+layout_mode = 2
+text = "Ticket Number: {ticket_id}"
+label_settings = SubResource("LabelSettings_elgqj")
+vertical_alignment = 2
+
+[node name="CompanyName" type="LineEdit" parent="ScrollContainer/VBoxContainer/TicketNumber" unique_id=1577712781]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -588.0
+offset_bottom = 49.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+placeholder_text = "Company Name"
+
+[node name="TargetTrain" type="LineEdit" parent="ScrollContainer/VBoxContainer" unique_id=375289166]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+placeholder_text = "Train"
+
+[node name="Spacer4" type="Control" parent="ScrollContainer/VBoxContainer" unique_id=1294164792]
+custom_minimum_size = Vector2(41, 41)
+layout_mode = 2
+
+[node name="Line1Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1898083639]
+layout_mode = 2
+text = "1.               TRACK WARRANT NUMBER                                                                                                                          TO VOID."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="LineOne_Number" type="OptionButton" parent="ScrollContainer/VBoxContainer/Line1Lbl" unique_id=561316663]
+layout_mode = 0
+offset_left = 495.0
+offset_top = -4.0
+offset_right = 1180.0
+offset_bottom = 45.0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line1Lbl" unique_id=2081390290]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="Line2Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1642172696]
+layout_mode = 2
+text = "2.               PROCEED FROM                                       TO                                       ON                                       TRACK."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line2Lbl" unique_id=1977363628]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="fromBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line2Lbl" unique_id=341331836]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -979.0
+offset_top = -4.0
+offset_right = -764.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="toBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line2Lbl" unique_id=365847524]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -707.0
+offset_top = -4.0
+offset_right = -492.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="onBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line2Lbl" unique_id=929792114]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -431.0
+offset_top = -4.0
+offset_right = -216.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="Line3Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1137954286]
+layout_mode = 2
+text = "3.               PROCEED FROM                                       TO                                       ON                                       TRACK."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line3Lbl" unique_id=2049524312]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="fromBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line3Lbl" unique_id=1350060572]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -979.0
+offset_top = -4.0
+offset_right = -764.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="toBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line3Lbl" unique_id=717390818]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -707.0
+offset_top = -4.0
+offset_right = -492.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="onBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line3Lbl" unique_id=1550347912]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -431.0
+offset_top = -4.0
+offset_right = -216.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="Line4Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1854466703]
+layout_mode = 2
+text = "4.               WORK BETWEEN                                       AND                                       ON                                       TRACK."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line4Lbl" unique_id=1957312314]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="fromBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line4Lbl" unique_id=1974277691]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -971.0
+offset_top = -4.0
+offset_right = -756.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="toBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line4Lbl" unique_id=1149187370]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -679.0
+offset_top = -4.0
+offset_right = -464.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="onBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line4Lbl" unique_id=821712947]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -403.0
+offset_top = -4.0
+offset_right = -188.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="Line5Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=463665396]
+layout_mode = 2
+text = "5.               NOT IN EFFECT UNTIL                                                                                                                                        ."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line5Lbl" unique_id=1708280312]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="effectBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line5Lbl" unique_id=45372472]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -903.0
+offset_top = -4.0
+offset_right = -98.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="Line6Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=638172307]
+layout_mode = 2
+text = "6.               THIS AUTHORITY EXPIRES AT                                                                                                                         ."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line6Lbl" unique_id=86656399]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="effectBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line6Lbl" unique_id=1821558899]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -813.0
+offset_top = -4.0
+offset_right = -96.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="Line7Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=964460119]
+layout_mode = 2
+text = "7.               NOT IN EFFECT UNTIL AFTER ARRIVAL OF                                                                                                AT
+                                                                                                         ."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line7Lbl" unique_id=680295945]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="trainBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line7Lbl" unique_id=1881545311]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -658.0
+offset_top = -4.0
+offset_right = -96.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="timeBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line7Lbl" unique_id=1632571682]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1201.0
+offset_top = 40.0
+offset_right = -689.0
+offset_bottom = 89.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="Line8Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=274435487]
+layout_mode = 2
+text = "8.               HOLD MAIN TRACK AT LAST NAMED POINT."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line8Lbl" unique_id=656596898]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="Line9Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1691261164]
+layout_mode = 2
+text = "9.               DO NOT FOUL LIMITS AHEAD OF                                                                                                      ."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line9Lbl" unique_id=1862244221]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="effectBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line9Lbl" unique_id=589456273]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -773.0
+offset_top = -4.0
+offset_right = -176.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="Line10Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1145911932]
+layout_mode = 2
+text = "10.            CLEAR MAIN TRACK AT LAST NAMED POINT."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line10Lbl" unique_id=1897633054]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="Line11Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=824790361]
+layout_mode = 2
+text = "11.            BETWEEN                                                AND                                                MAKE ALL MOVEMENTS
+                   AT RESTRICTED SPEED. LIMITS OCCUPIED BY TRAIN."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line11Lbl" unique_id=387624896]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="fromBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line11Lbl" unique_id=1948808512]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1067.0
+offset_top = -4.0
+offset_right = -791.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="toBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line11Lbl" unique_id=1811389458]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -719.0
+offset_top = -4.0
+offset_right = -443.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="Line12Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1206884195]
+layout_mode = 2
+text = "12.            BETWEEN                                                AND                                                MAKE ALL MOVEMENTS
+                   AT RESTRICTED SPEED. LIMITS OCCUPIED BY MEN OR EQUIPMENT."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line12Lbl" unique_id=1091357896]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="fromBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line12Lbl" unique_id=1712070028]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1067.0
+offset_top = -4.0
+offset_right = -791.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="toBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line12Lbl" unique_id=1654960327]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -719.0
+offset_top = -4.0
+offset_right = -443.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="Line13Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=339339513]
+layout_mode = 2
+text = "13.          DO NOT EXCEED                    MPH BETWEEN                                     AND                                     ."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line13Lbl" unique_id=2026193293]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="mphBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line13Lbl" unique_id=20690935]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -995.0
+offset_top = -4.0
+offset_right = -887.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="fromBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line13Lbl" unique_id=987607312]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -679.0
+offset_top = -4.0
+offset_right = -464.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="toBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line13Lbl" unique_id=874568976]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -395.0
+offset_top = -4.0
+offset_right = -180.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="Line14Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=706567314]
+layout_mode = 2
+text = "14.          DO NOT EXCEED                    MPH BETWEEN                                     AND                                     ."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line14Lbl" unique_id=1667456118]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="mphBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line14Lbl" unique_id=1077330088]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -995.0
+offset_top = -4.0
+offset_right = -887.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="fromBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line14Lbl" unique_id=1887902840]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -679.0
+offset_top = -4.0
+offset_right = -464.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="toBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line14Lbl" unique_id=2091446377]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -395.0
+offset_top = -4.0
+offset_right = -180.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="Line15Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1871541063]
+layout_mode = 2
+text = "15.          FLAG PROTECTION NOT REQUIRED AGAINST FOLLOWING TRAINS ON THE SAME TRACK."
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line15Lbl" unique_id=1610249031]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="Line17" type="Control" parent="ScrollContainer/VBoxContainer" unique_id=2040922994]
+custom_minimum_size = Vector2(1316, 275)
+layout_mode = 2
+
+[node name="Line17Lbl" type="Label" parent="ScrollContainer/VBoxContainer/Line17" unique_id=1337754478]
+layout_mode = 0
+offset_right = 1316.0
+offset_bottom = 41.0
+text = "17.          OTHER SPECIFIC INSTRUCTIONS: "
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/VBoxContainer/Line17/Line17Lbl" unique_id=1776713205]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -3.0
+offset_right = 77.0
+offset_bottom = 21.0
+scale = Vector2(2, 2)
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/VBoxContainer/Line17/Line17Lbl" unique_id=762346197]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 40.0
+offset_right = 1335.0
+offset_bottom = 274.0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+placeholder_text = "Instructions here."
+
+[node name="Spacer" type="Control" parent="ScrollContainer/VBoxContainer" unique_id=1499360398]
+custom_minimum_size = Vector2(41, 41)
+layout_mode = 2
+
+[node name="Line18Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1043978019]
+layout_mode = 2
+text = "OK                                 (TIME)              DISPATCHER"
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="timeBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line18Lbl" unique_id=2088242454]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1267.0
+offset_top = -4.0
+offset_right = -1087.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="nameBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line18Lbl" unique_id=1996542483]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -731.0
+offset_top = -4.0
+offset_right = -34.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="Spacer2" type="Control" parent="ScrollContainer/VBoxContainer" unique_id=1118468206]
+custom_minimum_size = Vector2(41, 41)
+layout_mode = 2
+
+[node name="Line19Lbl" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=242987437]
+layout_mode = 2
+text = "LIMITS REPORTED CLEAR AT"
+label_settings = SubResource("LabelSettings_elgqj")
+
+[node name="timeBox" type="LineEdit" parent="ScrollContainer/VBoxContainer/Line19Lbl" unique_id=1212191804]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -931.0
+offset_top = -4.0
+offset_right = -34.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qrkk7")
+theme_override_font_sizes/font_size = 32
+
+[node name="Spacer3" type="Control" parent="ScrollContainer/VBoxContainer" unique_id=804713128]
+custom_minimum_size = Vector2(41, 41)
+layout_mode = 2
+
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/TicketNumber/CompanyName" to="." method="_on_company_name_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/TargetTrain" to="." method="_on_target_train_text_changed"]
+[connection signal="item_selected" from="ScrollContainer/VBoxContainer/Line1Lbl/LineOne_Number" to="." method="_on_line_one_number_item_selected"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line1Lbl/CheckBox" to="." method="_on_l1_check_box_toggled"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line2Lbl/CheckBox" to="." method="_on_l2_check_box_toggled"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line2Lbl/fromBox" to="." method="_on_l2_from_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line2Lbl/toBox" to="." method="_on_l2_to_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line2Lbl/onBox" to="." method="_on_l2_on_box_text_changed"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line3Lbl/CheckBox" to="." method="_on_l3_check_box_toggled"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line3Lbl/fromBox" to="." method="_on_3from_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line3Lbl/toBox" to="." method="_on_3to_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line3Lbl/onBox" to="." method="_on_3on_box_text_changed"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line4Lbl/CheckBox" to="." method="_on_4check_box_toggled"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line4Lbl/fromBox" to="." method="_on_4from_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line4Lbl/toBox" to="." method="_on_4to_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line4Lbl/onBox" to="." method="_on_4on_box_text_changed"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line5Lbl/CheckBox" to="." method="_on_5check_box_toggled"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line5Lbl/effectBox" to="." method="_on_5effect_box_text_changed"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line6Lbl/CheckBox" to="." method="_on_6check_box_toggled"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line6Lbl/effectBox" to="." method="_on_6effect_box_text_changed"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line7Lbl/CheckBox" to="." method="_on_7check_box_toggled"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line7Lbl/trainBox" to="." method="_on_7train_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line7Lbl/timeBox" to="." method="_on_7time_box_text_changed"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line8Lbl/CheckBox" to="." method="_on_8check_box_toggled"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line9Lbl/CheckBox" to="." method="_on_9check_box_toggled"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line9Lbl/effectBox" to="." method="_on_9effect_box_text_changed"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line10Lbl/CheckBox" to="." method="_on_10check_box_toggled"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line11Lbl/CheckBox" to="." method="_on_11check_box_toggled"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line11Lbl/fromBox" to="." method="_on_11from_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line11Lbl/toBox" to="." method="_on_11to_box_text_changed"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line12Lbl/CheckBox" to="." method="_on_12check_box_toggled"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line12Lbl/fromBox" to="." method="_on_12from_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line12Lbl/toBox" to="." method="_on_12to_box_text_changed"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line13Lbl/CheckBox" to="." method="_on_13check_box_toggled"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line13Lbl/mphBox" to="." method="_on_13mph_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line13Lbl/fromBox" to="." method="_on_13from_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line13Lbl/toBox" to="." method="_on_13to_box_text_changed"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line14Lbl/CheckBox" to="." method="_on_14check_box_toggled"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line14Lbl/mphBox" to="." method="_on_14mph_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line14Lbl/fromBox" to="." method="_on_14from_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line14Lbl/toBox" to="." method="_on_14to_box_text_changed"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line15Lbl/CheckBox" to="." method="_on_15check_box_toggled"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/Line17/Line17Lbl/CheckBox" to="." method="_on_17check_box_toggled"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line17/Line17Lbl/TextEdit" to="." method="_on_17text_edit_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line18Lbl/timeBox" to="." method="_on_18time_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line18Lbl/nameBox" to="." method="_on_18name_box_text_changed"]
+[connection signal="text_changed" from="ScrollContainer/VBoxContainer/Line19Lbl/timeBox" to="." method="_on_19time_box_text_changed"]

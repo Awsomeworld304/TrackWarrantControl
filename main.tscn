@@ -1,0 +1,413 @@
+[gd_scene format=3 uid="uid://dyg05uo5iv6rp"]
+
+[ext_resource type="Script" uid="uid://c3gfckfexc3u7" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://ocf772t6db14" path="res://assets/images/brushed_metal_bg.jpg" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://ba6lmrtpyisoy" path="res://scenes/track_warrant_form.tscn" id="4_1bvp3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lquwl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
+bg_color = Color(0, 0, 0, 0.21176471)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.07450981, 0.07450981, 0.07450981, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mycd"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.07)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_272bh"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.4)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vw27"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.4)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lquwl"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.3)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kek77"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.3)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4c57u"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.17578125, 0.17578125, 0.17578125, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_efxa6"]
+content_margin_left = 4.0
+content_margin_top = 8.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.17578125, 0.17578125, 0.17578125, 1)
+border_width_left = 2
+border_width_top = 4
+border_width_right = 2
+border_color = Color(0, 0, 0, 0.6)
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dg77c"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.234375, 0.234375, 0.234375, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7xrwy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xm2m"]
+bg_color = Color(0.109375, 0.109375, 0.109375, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.07421875, 0.07421875, 0.07421875, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7xrwy"]
+bg_color = Color(0.22265625, 0.22265625, 0.22265625, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_color = Color(0.07450981, 0.07450981, 0.07450981, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_detail = 16
+shadow_size = 4
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
+bg_color = Color(0.22265625, 0.22265625, 0.22265625, 1)
+border_width_left = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.07450981, 0.07450981, 0.07450981, 1)
+border_blend = true
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="Animation" id="Animation_h2yge"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Top:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Bottom:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 486)]
+}
+
+[sub_resource type="Animation" id="Animation_lquwl"]
+resource_name = "close"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Top:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, 1),
+"update": 0,
+"values": [Vector2(0, -490), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Bottom:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, 1),
+"update": 0,
+"values": [Vector2(0, 976), Vector2(0, 486)]
+}
+
+[sub_resource type="Animation" id="Animation_1bvp3"]
+resource_name = "open"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Top:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -490)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Bottom:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, 1),
+"update": 0,
+"values": [Vector2(0, 486), Vector2(0, 976)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lquwl"]
+_data = {
+&"RESET": SubResource("Animation_h2yge"),
+&"close": SubResource("Animation_lquwl"),
+&"open": SubResource("Animation_1bvp3")
+}
+
+[node name="Main" type="Control" unique_id=33602042]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig7tw")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=934410534]
+
+[node name="BG" type="ColorRect" parent="CanvasLayer" unique_id=1439841791]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.16862746, 0.16862746, 0.16862746, 1)
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=739807590]
+visible = false
+modulate = Color(0.32421875, 0.32421875, 0.32421875, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_h2yge")
+expand_mode = 5
+stretch_mode = 3
+
+[node name="FormList" type="Panel" parent="CanvasLayer" unique_id=1918851900]
+anchors_preset = -1
+anchor_right = 0.221875
+anchor_bottom = 1.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_lquwl")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="title" type="RichTextLabel" parent="CanvasLayer/FormList" unique_id=577465970]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.07042254
+anchor_top = 0.0037037036
+anchor_right = 1.0
+anchor_bottom = 0.07037037
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Track Warrant Control"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="FormList" type="ItemList" parent="CanvasLayer/FormList" unique_id=464325584]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 70.0
+offset_right = 426.0
+offset_bottom = 889.0
+theme_override_font_sizes/font_size = 32
+theme_override_styles/panel = SubResource("StyleBoxFlat_1bvp3")
+theme_override_styles/focus = SubResource("StyleBoxFlat_1bvp3")
+theme_override_styles/hovered = SubResource("StyleBoxFlat_7mycd")
+theme_override_styles/hovered_selected = SubResource("StyleBoxFlat_272bh")
+theme_override_styles/hovered_selected_focus = SubResource("StyleBoxFlat_5vw27")
+theme_override_styles/selected = SubResource("StyleBoxFlat_lquwl")
+theme_override_styles/selected_focus = SubResource("StyleBoxFlat_kek77")
+
+[node name="NewForm" type="Button" parent="CanvasLayer/FormList" unique_id=584351030]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 920.0
+offset_right = 162.0
+offset_bottom = 979.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4c57u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_efxa6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dg77c")
+text = "New Form"
+
+[node name="RefreshList" type="Button" parent="CanvasLayer/FormList" unique_id=1702465086]
+layout_mode = 0
+offset_left = 294.0
+offset_top = 920.0
+offset_right = 426.0
+offset_bottom = 979.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4c57u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_efxa6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dg77c")
+text = "Refresh List"
+
+[node name="FormContentPanel" type="Panel" parent="CanvasLayer" unique_id=1702254399]
+anchors_preset = -1
+anchor_left = 0.221875
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_7xrwy")
+metadata/_edit_lock_ = true
+metadata/_edit_use_anchors_ = true
+
+[node name="NewForm2" type="Button" parent="CanvasLayer/FormContentPanel" unique_id=2001088969]
+visible = false
+layout_mode = 0
+offset_left = 53.0
+offset_top = 4.0
+offset_right = 185.0
+offset_bottom = 63.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4c57u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_efxa6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dg77c")
+text = "Export to PDF"
+
+[node name="InnerContentPanel" type="Panel" parent="CanvasLayer/FormContentPanel" unique_id=514396086]
+clip_children = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -709.0
+offset_top = -470.0
+offset_right = 705.5
+offset_bottom = 502.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0xm2m")
+metadata/_edit_lock_ = true
+
+[node name="TrackWarrantForm" parent="CanvasLayer/FormContentPanel/InnerContentPanel" unique_id=1695434860 instance=ExtResource("4_1bvp3")]
+layout_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Top" type="Panel" parent="CanvasLayer/FormContentPanel/InnerContentPanel" unique_id=977842398]
+layout_mode = 0
+offset_right = 1414.5
+offset_bottom = 486.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7xrwy")
+metadata/_edit_lock_ = true
+
+[node name="Bottom" type="Panel" parent="CanvasLayer/FormContentPanel/InnerContentPanel" unique_id=718630792]
+layout_mode = 0
+offset_top = 486.0
+offset_right = 1414.5
+offset_bottom = 972.0025
+theme_override_styles/panel = SubResource("StyleBoxFlat_h2yge")
+metadata/_edit_lock_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/FormContentPanel/InnerContentPanel" unique_id=630582897]
+libraries/ = SubResource("AnimationLibrary_lquwl")
+
+[connection signal="item_selected" from="CanvasLayer/FormList/FormList" to="." method="_on_form_list_item_selected"]
+[connection signal="button_up" from="CanvasLayer/FormList/NewForm" to="." method="_on_new_form_button_up"]
+[connection signal="button_up" from="CanvasLayer/FormList/RefreshList" to="." method="_on_refresh_list_button_up"]
+[connection signal="button_up" from="CanvasLayer/FormContentPanel/NewForm2" to="." method="_on_new_form_button_up"]
