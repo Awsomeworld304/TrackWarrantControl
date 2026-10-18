@@ -246,6 +246,7 @@ func get_from_json(data_string:String) -> void:
 	pass
 
 func export_to_pdf(path:String = "") -> void:
+	"""
 	if path.is_empty(): path = "%s/%s.pdf" % [Settings.data_dir, id];
 	var pdf:PDF_DOC = PDF_DOC.new();
 	var page:PDF_PAGE = pdf.add_page();
@@ -265,4 +266,6 @@ func export_to_pdf(path:String = "") -> void:
 	
 	pdf.save_to_file(path);
 	pdf.free();
+	"""
+	push_warning("PDF code is disabled.");
 	pass
